@@ -3,11 +3,14 @@ import { IoMdSearch } from "react-icons/io";
 
 export const Search = () => {
   return (
-    <div className="relative px-[24px] py-[12] w-[450px] ">
-      <IoMdSearch className="absolute" />
+    <div className="relative p-[30px]  ">
+      <span className="absolute left-11 top-1/2 transform -translate-y-1/2">
+        <IoMdSearch className="fill-[#cccccc] size-[30px]" />
+      </span>
+
       <input
         placeholder="Search"
-        className="  w-object-contain h-object-contain bg-white border border-none  text-[32px]  rounded-full outline-none shadow-md"
+        className=" pl-12   placeholder:text-[#cccccc] px-[60px] py-[15px] bg-white border border-none text-[21px] min-w-[500px] rounded-full outline-none shadow-md "
       />
     </div>
   );
